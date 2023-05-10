@@ -41,6 +41,9 @@ for all three classifiers.
 We find that 89 patients were correctly identified to have a tumor that is malignant, 180 patients were 
 correctly identified to have benign tumors, and a 94.39% effectiveness in classification.
 
+> 7 patients were incorrectly identified to have malignant tumors and 9 patients were incorrectly
+> identified to have benign tumors.
+
 ### Logistic regression
 
 ![logreg confusion matrix.png](readme%2Flogreg%20confusion%20matrix.png)
@@ -49,6 +52,9 @@ correctly identified to have benign tumors, and a 94.39% effectiveness in classi
 
 We find that 90 patients were correctly identified to have a tumor that is malignant, 180 patients were 
 correctly identified to have benign tumors, and a 94.74% effectiveness in classification.
+
+> 7 patients were incorrectly identified to have malignant tumors and 8 patients were incorrectly
+> identified to have benign tumors.
 
 ### Support vector machines
 
@@ -59,16 +65,23 @@ correctly identified to have benign tumors, and a 94.74% effectiveness in classi
 We find that 93 patients were correctly identified to have a tumor that is malignant, 182 patients were 
 correctly identified to have benign tumors, and a 96.49% effectiveness in classification.
 
+> 5 patients were incorrectly identified to have malignant tumors and 5 patients were incorrectly
+> identified to have benign tumors.
+
 ### Conclusion
 
 We can conclude that support vector machines are most accurate in predicting the cancerous nature of
-a patient's tumor in this data set.
+a patient's tumor in this data set. Logistic regression falls behind support vector machines, however,
+both are more accurate than naive Bayes predictions according to the confusion matrices.
 
 ## Scrambled data
 
 To test the algorithms in a less controlled manner, I scrambled data to see the results. Surprisingly,
-support vector machines and logistic regression algorithms provided more similar results as compared to
-naive bayes.
+support vector machines and logistic regression algorithms provided more similar results to our previous
+results as compared to naive Bayes.
+
+Perhaps this is due to chance, however, in out of 10 trials, SVMs and logistic regression showed accuracy
+greater than naive Bayes.
 
 > ### Naive Bayes
 
@@ -81,6 +94,29 @@ naive bayes.
 > ### Support vector machines
 
 ![svm confusion matrix random.png](readme%2Fsvm%20confusion%20matrix%20random.png)
+
+## Limitations
+
+### No CTC cell count - metastasis
+
+Unfortunately, this data set does not contain feature set data for
+CTC (circulating tumor cell) count, which makes it impossible in this scenario
+to predict the nature of metastasis within a patient.
+
+Additionally, arbitrary sample number provided by the program would not be
+effective or viable at all for this program.
+
+### SVM decision boundary generation
+
+This program unfortunately does not visualize the hyperplane nor the decision 
+margins of the support vector machine, as computation and plotting of data 
+was not accurate in visualizing this.
+
+### Scrambling of untrained data
+
+Due to the fact that much data within this data set are in fact, not 1s and 0s,
+scrambling of untrained data could lead to many inaccuracies when fitting them
+on any of the classifiers.
 
 ## Dependencies
 
