@@ -3,6 +3,9 @@ Running naive Bayes and support vector machine classifiers using scikit-learn on
 cell data sets to predict cancerous nature of the patient. Data accessed from the
 **Breast Cancer Wisconsin (Diagnostic) Data Set**:
 https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic).
+
+> Machine Learning final project.
+
 - **Pride Y**.
 
 ## Training data
