@@ -39,7 +39,7 @@ for all three classifiers.
 ![nb effectiveness.png](readme%2Fnb%20effectiveness.png)
 
 We find that 89 patients were correctly identified to have a tumor that is malignant, 180 patients were 
-correctly identified to have benign tumors, and a 94.79% effectiveness in classification.
+correctly identified to have benign tumors, and a 94.39% effectiveness in classification.
 
 ### Logistic regression
 
